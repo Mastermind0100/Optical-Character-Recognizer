@@ -131,7 +131,6 @@ Iopen = areaop(Iclear, 150)
 ih = 1
 fig=plt.figure(figsize=(64,64))
 
-
 _, contours, _ = cv2.findContours(Iopen,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
 
 contours = sortcnts(contours)
@@ -143,13 +142,11 @@ for cnt in contours:
     ih = ih+1
     
 plt.show()
-#cv2.imshow('rg',Iopen)
-#cv2.imshow('rg3',im)
-cv2.imshow('rg2',Ithresh)
-#arr_out = arr_out[::-1]
+cv2.imshow('rg3',im)
 final = ""
-for i in arr_out:
-    final = final+i
+
+for ch in arr_out:
+    final = final+ch
 
 print('\n',final)
 

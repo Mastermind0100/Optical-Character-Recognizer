@@ -6,3 +6,5 @@ The code first divides the image into multiple segments (each segment contains a
 
 ## Output
 ![final](https://user-images.githubusercontent.com/36445600/59195677-31570b00-8baa-11e9-8936-7cdf81ec6ac1.png)
+![112](https://user-images.githubusercontent.com/36445600/59196685-f4404800-8bac-11e9-852e-d8dfbd65f587.png)
+

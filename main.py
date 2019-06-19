@@ -85,7 +85,7 @@ def test(a,b,c,d,i,imd):                # to predict the character present in th
     #print('\n','Predicted Character:',arr_result[index[1][0]],'\n')
     arr_out.append(arr_result[index[1][0]])
 
-im = cv2.imread('smoke.jpg')
+im = cv2.imread('sample_img.jpg')
 img = cv2.cvtColor(im,cv2.COLOR_BGR2GRAY)
 
 #Code for enhancing the image--------------------------------------------------
@@ -142,7 +142,7 @@ for cnt in contours:
     ih = ih+1
     
 plt.show()
-cv2.imshow('rg3',im)
+cv2.imshow('test_window',im)
 final = ""
 
 for ch in arr_out:

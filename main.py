@@ -79,7 +79,6 @@ def final(input_img):
     print('\n',final)
 
 inim = cv2.imread('images (1).jfif')
-final(inim)
 
 cv2.waitKey()
 cv2.destroyAllWindows()

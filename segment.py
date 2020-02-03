@@ -18,7 +18,7 @@ def main():
 		print('Segmenting words of sample %s'%f)
 		
 		# read image, prepare it by resizing it to fixed height and converting it to grayscale
-		img = prepareImg(cv2.imread('data/%s'%f), 200)
+		img = prepareImg(cv2.imread('data/%s'%f), 300)
 		
 		# execute segmentation with given parameters
 		# -kernelSize: size of filter kernel (odd integer)

@@ -41,7 +41,6 @@ def test(a,b,c,d,imd):                # to predict the character present in the 
     if high != low:
         maxval = np.amax(result)
         index = np.where(result == maxval)
-
         arr_out.append(arr_result[index[1][0]])
 
 def final(input_img):    

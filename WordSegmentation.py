@@ -49,7 +49,7 @@ def wordSegmentation(img, kernelSize=25, sigma=11, theta=7, minArea=0):
 		res.append((currBox, currImg))
 
 	# return list of words, sorted by x-coordinate
-	return sorted(res, key=lambda entry:entry[0][0])
+	return sorted(res, key=lambda entry:(entry[0][1],entry[0][0]+entry[0][1]))
 
 
 def prepareImg(img, height):

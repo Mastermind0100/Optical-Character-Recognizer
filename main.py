@@ -7,8 +7,8 @@ Created on Thu Jun  6 16:40:46 2019
 """
 import numpy as np
 import cv2
-from keras.models import load_model
-from keras.preprocessing import image
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing import image
 from PIL import Image
 
 arr_out = []
@@ -39,48 +39,33 @@ def test(a,b,c,d,imd):                # to predict the character present in the 
     high = np.amax(test_image)
     low = np.amin(test_image)
     if high != low:
-        #print(result)
         maxval = np.amax(result)
         index = np.where(result == maxval)
-        #print('\n','Predicted Character:',arr_result[index[1][0]],'\n')
-        cv2.imshow('grg', t)
-        cv2.waitKey(0)
-        #print(maxval, ' ', arr_result[index[1][0]])
         arr_out.append(arr_result[index[1][0]])
 
 def final(input_img):    
     im = input_img.copy()
     img = cv2.cvtColor(im,cv2.COLOR_BGR2GRAY)
     
-    #Code for enhancing the image--------------------------------------------------
+    # Code for enhancing the image--------------------------------------------------
     
     blur = cv2.bilateralFilter(img.copy(),9,75,75)
-    _, thresh = cv2.threshold(blur.copy(), 100, 255, cv2.THRESH_BINARY)
-    #cv2.imshow('tt', thresh)
-    #cv2.waitKey(0)
-    #------------------------------------------------------------------------------
-    
-    cv2.imshow('tihdg', thresh)
-    cv2.waitKey(0)
-    contours, h = cv2.findContours(thresh.copy(),cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-    #contours = sortcnts(contours)
+    _, thresh = cv2.threshold(blur.copy(), 100, 255, cv2.THRESH_BINARY) 
+
+    a, contours, h = cv2.findContours(thresh.copy(),cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+
     sum = 0
     maxar = 0
-    #sorted(contours)
     for cnt in contours:
         x,y,w,h = cv2.boundingRect(cnt)
         sum += (w*h)
-        #if cv2.contourArea(cnt)>maxar:
-         #   maxar = cv2.contourArea(cnt)
+
     
     avg = sum/len(contours)
     maxar = 10000 
     minar = 1000
     for cnt in contours:
         x,y,w,h = cv2.boundingRect(cnt)
-        #cv2.rectangle(im,(x,y),(x+w,y+h),(255,0,255),2)
-        #tst = cv2.equalizeHist(img)
-        #print(w*h)
         if w*h < maxar and w*h > minar:
             test(x,y,w,h,img)
 
@@ -92,8 +77,7 @@ def final(input_img):
 
     print('\n',final)
 
-inim = cv2.imread('plate1.jpg')
-final(inim)
+inim = cv2.imread('images (1).jfif')
 
 cv2.waitKey()
 cv2.destroyAllWindows()

@@ -10,7 +10,7 @@ import cv2
 from main import *
 
 
-imgFiles = os.listdir('data/')
+imgFiles = os.listdir('data_/')
 for i in imgFiles:
     images = os.listdir('out/%s'%i)
     for j in images:

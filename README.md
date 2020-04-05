@@ -1,7 +1,7 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
 # Optical Character Recognition
-This is a code that reads an image and predicts what's written in it. 
+This is a code that reads the text present in an image and predicts what's written in it. 
 
 ## Process 
 The code first divides the image into multiple segments (each segment contains a single character). On this segment, a pretrained model is executed to predict the character present in the segment. This then outputs the predicted characters as a string
@@ -14,6 +14,16 @@ $ cd Optical-Character-Recognizer
 ```
 Great! You are set up with the repository.<br> 
 Let's dive into it!
+
+## How to Use the OCR
+1. Copy the following codes/files into the directory you are using for your project: (Note that if you have just a single code file, you can copy it to this directory instead)
+    * ocr.py
+    * fmodelwts.h5
+2. In your code, add the following lines:
+```python
+import ocr
+
+```
 
 ## Output
 The Original photo looks like this:

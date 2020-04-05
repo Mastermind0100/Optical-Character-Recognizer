@@ -43,7 +43,7 @@ def test(a,b,c,d,imd):                # to predict the character present in the 
         index = np.where(result == maxval)
         arr_out.append(arr_result[index[1][0]])
 
-def final(input_img):    
+def predict(input_img):    
     im = input_img.copy()
     img = cv2.cvtColor(im,cv2.COLOR_BGR2GRAY)
     

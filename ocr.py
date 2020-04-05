@@ -77,7 +77,5 @@ def predict(input_img):
 
     print('\n',final)
 
-inim = cv2.imread('images (1).jfif')
-
 cv2.waitKey()
 cv2.destroyAllWindows()

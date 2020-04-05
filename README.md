@@ -19,11 +19,24 @@ Let's dive into it!
 1. Copy the following codes/files into the directory you are using for your project: (Note that if you have just a single code file, you can copy it to this directory instead)
     * ocr.py
     * fmodelwts.h5
-2. In your code, add the following lines:
-```python
-import ocr
 
-```
+2. In your code, add the following lines:
+    ```python
+    import ocr
+    predict(image.extention)
+    ```
+
+3. This code will print the text the code detects in the image you gave as input in the function 'predict'.
+
+4. If you want the function to simply return the predicted text and not print it, then make the following changes to Line 78 of the program 'ocr.py':
+
+    ```python
+    return final
+    ```
+    Also, your code needs to accept it in a variable. So the code in Step 2 will change to:
+    ```python
+    text = predict(image.extention)
+    ```
 
 ## Output
 The Original photo looks like this:

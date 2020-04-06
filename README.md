@@ -40,6 +40,10 @@ Let's dive into it!
 
 * Note that this is a relatively basic OCR. It does not detect spaces for you or segment words in a sentence. While work is under progress for this, you can do some level of image pre-processing to make this work for you.<br>Watch out for further updates!
 
+## Want to train on your own Dataset?
+
+Go ahead! Fire up 'model.py' and use your own dataset. Hopefully the code is self explanatory.
+
 ## Output
 The Original photo looks like this:
 <br/><br/>

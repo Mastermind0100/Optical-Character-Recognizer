@@ -43,6 +43,7 @@ Let's dive into it!
 ## Want to train on your own Dataset?
 
 Go ahead! Fire up 'model.py' and use your own dataset. Hopefully the code is self explanatory.
+P.S. The Dataset I used was the [NIST](https://s3.amazonaws.com/nist-srd/SD19/by_class.zip) Dataset. Download the 2nd Edition and have fun manually arranging data :)
 
 ## Output
 The Original photo looks like this:

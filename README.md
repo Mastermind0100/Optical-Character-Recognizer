@@ -24,7 +24,7 @@ Let's dive into it!
 2. In your code, add the following lines:
     ```python
     import ocr
-    predict(image.extention)
+    predict(image)
     ```
 
 3. This code will print the text the code detects in the image you gave as input in the function 'predict'.
@@ -36,9 +36,11 @@ Let's dive into it!
     ```
     Also, your code needs to accept it in a variable. So the code in Step 2 will change to:
     ```python
-    text = predict(image.extention)
+    text = predict(image)
     ```
     
+* The 'image' that you pass in the argument of the **predict** function is the data after importing the image into the code using the [imread](https://www.geeksforgeeks.org/python-opencv-cv2-imread-method/) function in [opencv](https://opencv-python-tutroals.readthedocs.io/en/latest/index.html). But you knew that, right?
+
 * Note that this is a relatively basic OCR. It does not detect spaces for you or segment words in a sentence. While work is under progress for this, you can do some level of image pre-processing to make this work for you.<br>Watch out for further updates!
 
 ## Want to train on your own Dataset?

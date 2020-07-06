@@ -9,12 +9,12 @@ The code first divides the image into multiple segments (each segment contains a
 
 ## [Directory Tree](https://xiaoluoboding.github.io/repository-tree/)
 ```
-├──┐<br>
-├─ .gitignore<br>
-├─ LICENSE<br>
-├─ README.md<br>
-├─ fmodelwts.h5<br>
-├─ model.py<br>
+├──┐
+├─ .gitignore
+├─ LICENSE
+├─ README.md
+├─ fmodelwts.h5
+├─ model.py
 └─ ocr.py
 ```
 

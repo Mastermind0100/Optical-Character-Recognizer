@@ -7,6 +7,17 @@ This is a code that reads the text present in an image and predicts what's writt
 ## Process 
 The code first divides the image into multiple segments (each segment contains a single character). On this segment, a pretrained model is executed to predict the character present in the segment. This then outputs the predicted characters as a string
 
+## [Directory Tree](https://xiaoluoboding.github.io/repository-tree/)
+
+├──┐<br>
+├─ .gitignore<br>
+├─ LICENSE<br>
+├─ README.md<br>
+├─ fmodelwts.h5<br>
+├─ model.py<br>
+└─ ocr.py
+
+
 ## Setting up the OCR
 Let's start by cloning the repository<br>
 ```bash

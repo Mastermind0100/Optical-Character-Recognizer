@@ -73,6 +73,10 @@ Final Text Output (Spyder Console):
 <br/><br/>
 ![up2](https://user-images.githubusercontent.com/36445600/60267456-e6f2bf80-9907-11e9-8d8f-df9e9b6221ea.png)
 
+## Author
+
+[Atharva Hudlikar](https://github.com/Mastermind0100)
+
 ## License
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat)](http://badges.mit-license.org)<br>
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

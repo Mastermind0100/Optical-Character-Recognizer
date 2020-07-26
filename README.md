@@ -9,13 +9,14 @@ The code first divides the image into multiple segments (each segment contains a
 
 ## [Directory Tree](https://xiaoluoboding.github.io/repository-tree/)
 ```
-├──┐
+├─ model
+│  └─ fmodelwts.h5
+├─ src
+│  ├─ model.py
+│  └─ ocr.py
 ├─ .gitignore
 ├─ LICENSE
-├─ README.md
-├─ fmodelwts.h5
-├─ model.py
-└─ ocr.py
+└─ README.md
 ```
 
 ## Setting up the OCR
@@ -28,7 +29,7 @@ Great! You are set up with the repository.<br>
 Let's dive into it!
 
 ## How to Use the OCR
-1. Copy the following codes/files into the directory you are using for your project: (Note that if you have just a single code file, you can copy it to this directory instead)
+1. Copy the following codes/files into the directory you are using for your project:
     * ocr.py
     * fmodelwts.h5
 

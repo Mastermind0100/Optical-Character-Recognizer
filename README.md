@@ -1,3 +1,6 @@
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com)
+
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 [![LinkedIn-profile](https://img.shields.io/badge/LinkedIn-Atharva-blue.svg)](https://www.linkedin.com/in/atharva-hudlikar/)
 
@@ -72,10 +75,6 @@ Mid Processing Output:
 Final Text Output (Spyder Console):
 <br/><br/>
 ![up2](https://user-images.githubusercontent.com/36445600/60267456-e6f2bf80-9907-11e9-8d8f-df9e9b6221ea.png)
-
-## Author
-
-[Atharva Hudlikar](https://github.com/Mastermind0100)
 
 ## License
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat)](http://badges.mit-license.org)<br>
